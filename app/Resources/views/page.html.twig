@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome Pathbuddy! Go find a travelmate{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+        {% stylesheets 'bundles/app/css/base/*' filter='cssrewrite' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+
+        {% block stylesheets %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+
+    </head>
+    <body>
+        {% include 'page_header.html.twig' %}
+
+        <div class="page-body-container page">
+            <div class="page-inner-body-container">
+        {% block body %}{% endblock %}
+            </div>
+        </div>
+
+        {% include 'page_footer.html.twig' %}
+    </body>
+</html>

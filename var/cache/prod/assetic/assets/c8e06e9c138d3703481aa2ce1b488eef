@@ -1,0 +1,18 @@
+body {
+    background-color: #6b9311;
+    font-family: sans-serif;
+}
+
+h1, h2 {
+    line-height: 1.2;
+    margin: 0 0 .5em;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 1em;
+}

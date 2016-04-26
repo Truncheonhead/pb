@@ -1,0 +1,80 @@
+/* HTML Elements */
+
+body {
+    background-color: #6b9311;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+h1, h2 {
+    line-height: 1.2;
+    margin: 0 0 .5em;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+/* Page classes */
+
+.page {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    min-width: 1375px;
+}
+
+.page-header-background,
+.page-footer-background {
+    background-color: #CC7832;
+}
+
+.page-header-container {
+    border: solid thin black;
+    display: inline-block;
+    height: 250px;
+    margin-bottom: 5px;
+}
+
+.page-header-logo {
+    background-image: url("../../bundles/app/images/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+}
+
+.page-navigation-container {
+    border-top: solid thin black;
+    border-bottom: solid thin black;
+    width: 100%;
+    height: 20%;
+}
+
+.page-body-container {
+    border: solid thin black;
+    overflow-y: auto;
+    max-height: 800px;
+    height: auto;
+}
+
+.page-inner-body-container {
+    padding: 20px;
+}
+
+.page-footer-container {
+    border: solid thin black;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.page-footer-content {
+    padding: 5px;
+}

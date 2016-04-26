@@ -1,0 +1,24 @@
+{% if app.user %}
+
+    <button onclick="window.location.href = '{{ path('fos_user_profile_show') }}'">{{ 'menu.profile.title'|trans() }}&nbsp;&nbsp;
+    <button onclick="window.location.href = '{{ path('fos_user_security_logout') }}'">{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+
+{% else %}
+
+    <form action="{{ path("fos_user_security_check") }}" method="post">
+        <input type="text" id="username" name="_username" required="required" title="E-Mail" value="" />
+        <input type="password" id="password" title="Passwort" name="_password" required="required" />
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}" />
+
+        {#
+            If you want to control the URL the user
+            is redirected to on success (more details below)
+            <input type="hidden" name="_target_path" value="/account" />
+        #}
+
+        <button type="submit">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</button>
+    </form>
+
+{% endif %}
+
+

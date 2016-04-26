@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'C:\Users\tobias\PhpstormProjects\pathbuddy\pb\app/config/routing.yml'

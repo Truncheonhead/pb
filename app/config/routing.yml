@@ -1,0 +1,20 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+user:
+    path: /user/{userId}
+    defaults: {_controller: AppBundle:User:fetch, userId : null}
+    methods:  [GET, HEAD]
+
+buddy:
+    path: /buddy/
+    defaults: {_controller: AppBundle:Buddy:fetch }
+
+blog:
+    path: /blog/{blogId}
+    defaults: {_controller: AppBundle:BlogList:fetch, blogId : null}
+
