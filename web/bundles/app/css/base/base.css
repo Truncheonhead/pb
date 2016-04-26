@@ -42,8 +42,9 @@ a:hover {
     min-width: 1375px;
 }
 
+.page-header-container,
 .page-footer-background {
-    background-color: #CC7832;
+    background-color: rgba(255, 255, 255, .8);
 }
 
 .page-header-container-outer {
@@ -52,7 +53,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    border: solid thin #000;
+    border-bottom: solid 4px #000000;
     margin-bottom: 5px;
     height: 320px;
 }
@@ -68,17 +69,17 @@ a:hover {
 .page-header-container {
     z-index: 500;
     display: inline-block;
-    background: rgba(255, 255, 255, .6);
 }
 
 .page-header-logo {
-    background-image: url("../../images/header.png");
+    background-image: url("../../images/header3.png");
     background-repeat: no-repeat;
     width: 100%;
     z-index: 750;
-    height: 320px;
+    height: 270px;
     background-position: center;
     background-size: contain;
+    margin-bottom: 50px;
 }
 
 .page-navigation-container-outer {
@@ -101,12 +102,13 @@ a:hover {
 
 .page-inner-body-container {
     padding: 20px;
+    background-color: rgba(255,255,255,.6);
 }
 
 .page-footer-container {
     border: solid thin black;
     margin-top: 5px;
-    bottom: 5px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -122,11 +124,12 @@ a:hover {
 
 .inner-content {
     padding: 10px;
-    border: solid thin gold;
+    border: solid thin black;
+    background-color: rgba(255,255,255,.8);
 }
 
 .page-inner-body-container .following-row {
-    border-top: solid thin crimson;
+    border-top: solid thin black;
     margin-top: 10px;
     padding-top: 10px;
 }
